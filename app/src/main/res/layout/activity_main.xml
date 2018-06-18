@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comtymarten.httpsgithub.makeyourstory.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title"
+        android:text="Create Your Story"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_1"
+        android:text="1"
+        android:layout_alignTop="@id/btn_2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:onClick="changeStory" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_2"
+        android:text="2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="changeStory" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_3"
+        android:text="3"
+        android:layout_alignTop="@id/btn_2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:onClick="changeStory"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_main_message"
+        android:textSize="20sp"
+        android:layout_margin="65dp"
+        android:paddingBottom="45dp"
+        android:text=""/>
+    <TextView
+        android:id="@+id/tv_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="22sp"
+        android:layout_alignBottom="@+id/tv_main_message"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="#cc0000"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher_background"
+        />
+
+</RelativeLayout>
